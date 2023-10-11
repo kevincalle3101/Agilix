@@ -1,9 +1,10 @@
-import React from 'react'
+const server = require("./src/app");
+const { conn } = require("./src/db");
 
-const index = () => {
-  return (
-    <div>index</div>
-  )
-}
+const PORT = process.env.PORT;
 
-export default index
+conn.sync({ force: false }).then(() => {
+  server.listen(PORT, "0.0.0.0", () => {
+    console.log("Servidor escuchando en el puerto:", PORT);
+  });
+});
