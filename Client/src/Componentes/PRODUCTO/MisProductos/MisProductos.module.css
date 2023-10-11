@@ -1,0 +1,202 @@
+.contenedor {
+  display: grid;
+  margin-left: 10rem;
+  grid-template-columns: repeat(3, fit-content(100%));
+  grid-template-rows: repeat(3, fit-content(100%));
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+}
+
+.cards {
+  background-color:#2c2c2c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgb(37, 37, 37);
+  border-radius: 10px;
+  margin: 9px;
+  width: 485px;
+ 
+}
+
+.imagen {
+
+  max-width: 240px;
+  max-height: 240px;
+}
+
+
+
+.contenedorLetras {
+  flex-direction: column;
+  margin: 10px;
+  color: rgb(248, 248, 248);
+  margin-left: 50px;
+  justify-content: left;
+  text-align: left;
+  margin-bottom: 40px;
+}
+.tittle {
+  color: aliceblue;
+  background-color: rgb(41, 40, 40);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  border: 1px solid rgb(49, 49, 49);
+  border-radius: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
+}
+
+.selectores {
+  color: white;
+  width: 150px;
+  height: 50px;
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  border: none;
+}
+
+.contenedorSelector {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  color: rgb(248, 248, 248);
+  margin-left: 50px;
+  margin-right: 50px;
+  gap: 25px;
+}
+
+.buttonReset {
+  appearance: none;
+  background-color: transparent;
+  border: 0.125em solid #1A1A1A;
+  border-radius: 0.9375em;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  min-height: 3.75em;
+  min-width: 0;
+  outline: none;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+}
+
+.buttonReset:disabled {
+  pointer-events: none;
+ }
+ 
+ .buttonReset:hover {
+  color: #882c9b;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+ }
+ 
+ .buttonReset:active {
+  box-shadow: none;
+  transform: translateY(0);
+ }
+ .botonEliminar{
+  font-size: 15px;
+  width: 30px;
+  color: white;
+  background-color:#2c2c2c;
+  cursor: pointer;
+  margin-left: 160px;
+  border: none;
+  border: 3px solid rgb(49, 49, 49);
+  border-radius:  10px;
+ }
+ .botonEliminar:hover{
+  color: #bb1414;
+ }
+
+
+ .PaginadoContainer {
+  display: flex;
+  justify-content: center;
+ }
+
+
+ .inputGroup {
+  padding-bottom: 150px;
+ }
+
+ .confirmDialog{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.95); 
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 9999; 
+  width: 300px; 
+  text-align: center;
+ }
+ .confirmDialogP{
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #333;
+ }
+ .confirmDialogButton{
+  background-color: #4a4a4b;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-right: 10px;
+ }
+ .confirmDialogButton:hover {
+  background-color: #4e36da;
+}
+.confirmDialogButton:last-child {
+  background-color: #4a4a4b;
+  color: #ffffff;
+}
+
+.confirmDialogButton:last-child:hover {
+  background-color: #bb1414;
+}
+
+.ContenedorBotonBack {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  height: 5%;
+  align-items: center;
+  margin-left: 5rem;
+  margin-top: 1.5rem;
+}
+
+.BotonBack {
+  padding-top: 0.5rem;
+  color: white;
+  font-size: 1.3rem;
+  width: 4rem;
+  background-color: #181818;
+  transition: 0.5s;
+  border-radius: 10px;
+}
+
+.BotonBack:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
